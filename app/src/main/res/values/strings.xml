@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">frame</string>
+    <!--异常处理 start-->
+    <string name="network_error">Please check network connection</string>
+    <string name="no_data_error">no data</string>
+    <string name="request_failed_error">Request failed</string>
+    <string name="time_out_error">Network request time out</string>
+    <string name="oom_error">Mom Error</string>
+    <!--异常处理 end-->
+</resources>

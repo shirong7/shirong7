@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="VM"
+            type="com.huinan.frame.ui.dialog.load.LoadViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.lihang.ShadowLayout
+            android:id="@+id/shadowLayout"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:hl_layoutBackground="@color/white"
+            app:hl_cornerRadius="@dimen/q60"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ProgressBar
+            android:id="@+id/progressRingView"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="@dimen/q132"
+            android:layout_height="@dimen/q132"
+            android:layout_marginTop="32dp"
+            android:indeterminateTint="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/shadowLayout"
+            app:layout_constraintStart_toStartOf="@+id/shadowLayout"
+            app:layout_constraintTop_toTopOf="@+id/shadowLayout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/q30"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/shadowLayout"
+            app:layout_constraintStart_toStartOf="@+id/shadowLayout"
+            app:layout_constraintTop_toBottomOf="@+id/progressRingView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

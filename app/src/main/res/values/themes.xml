@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Frame" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Frame" parent="Base.Theme.Frame" />
+    <style name="Theme.MyApplication" parent="Theme.AppCompat.Light.NoActionBar" >
+        <!-- Primary brand color. -->
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="toolbarStyle">@style/NoSpaceActionBarTheme</item>
+        <!--  设置状态栏颜色, 字体反色  -->
+        <item name="android:windowTranslucentStatus">false</item>
+        <!--设置是否为状态栏和导航栏绘制背景 -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!-- Android 6.0以上 状态栏字色和图标为浅黑色-->
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="NoSpaceActionBarTheme" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+    </style>
+</resources>
